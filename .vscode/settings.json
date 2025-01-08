@@ -8,11 +8,13 @@
   "files.trimFinalNewlines": true,
   "files.insertFinalNewline": true,
   "python.formatting.provider": "black",
-  "python.formatting.blackArgs": ["--config", "./pyproject.toml"],
+  "python.formatting.blackArgs": ["--line-length=79"],
   "python.linting.enabled": true,
   "python.linting.flake8Enabled": true,
   "python.linting.mypyEnabled": true,
-  "python.linting.flake8Args": ["--config=./pyproject.toml"],
+  "python.linting.flake8Args": ["--show-source"],
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintArgs": ["--disable=C0114,C0115,C0116"],
   "python.analysis.extraPaths": [
     "./src"
   ],
